@@ -9,6 +9,7 @@ For the frontend:
 * Antd
 * Custom Hook to fetch data (useFetch), which is leveraging the generics typescript concept to accept and ensure its types
 * ContextAPI is here to help us abstract and reuse some states across the application where necessary
+* Making use of the Outlet (react-router-dom), so the component can be wrapper in a layout (Basically, a High-Order component, where a function takes a component and returns a new component).
 * JSON Server mocking RestFul API, so we can make calls to the endpoints
 
 
@@ -43,5 +44,6 @@ Work In Progress (Pending)
 
 This section aims to express the points that are either missing, or should be implemented, for this project to function better.
 
+* [ ] Make use of docker, so starting this project in a different machine should be smoother
 * [ ] Implement skeleton, so when loading the new data, we can see it in a more friendly way
 * [ ] Implement some unit tests
