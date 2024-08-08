@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Camlin Technical Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies/concepts involved
 
-Currently, two official plugins are available:
+For the frontend:
+* Vite
+* React
+* Typescript
+* Antd
+* Custom Hook to fetch data (useFetch), which is leveraging the generics typescript concept to accept and ensure its types
+* ContextAPI is here to help us abstract and reuse some states across the application where necessary
+* Making use of the Outlet (react-router-dom), so the component can be wrapper in a layout (Basically, a High-Order component, where a function takes a component and returns a new component).
+* JSON Server mocking RestFul API, so we can make calls to the endpoints
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Setting Up & starting the webcomponents/json server applications
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+For the frontend, please guarantee you have node 20+ installed on your machine.
 
-- Configure the top-level `parserOptions` property like this:
+Please access the `camlin-technical-task` folder, which is the related project.
+* Run `yarn install`
+* Run `yarn run dev`
+  * This command should start the react project (PORT=5178) and the json server (PORT=5179)
+  * Frontend: http://localhost:5178/
+  * JSON Server: http://localhost:5179/
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/user-attachments/assets/a51745fe-903a-4196-b0d9-b30a43724711)
+
+![image](https://github.com/user-attachments/assets/4af11f0b-8364-4a70-8163-76bee75ca718)
+
+![image](https://github.com/user-attachments/assets/91bd7664-7aa4-42f7-8585-f0bcc4bd848e)
+
+![image](https://github.com/user-attachments/assets/1599d008-c1c7-43b3-acc4-99e84e062cc3)
+
+
+## How does this work?
+
+The purpose here is to quickly present the concept in a nutshell.
+
+Work In Progress (Pending)
+
+## Next steps
+
+This section aims to express the points that are either missing, or should be implemented, for this project to function better.
+
+* [ ] Make use of docker, so starting this project in a different machine should be smoother
+* [ ] Implement skeleton, so when loading the new data, we can see it in a more friendly way
+* [ ] Implement some unit tests
