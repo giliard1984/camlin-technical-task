@@ -8,7 +8,7 @@ import { AppContext } from "../contexts/AppContext";
 import type { Transformer, NormalisedData, NormalisedMedian } from "../definitions/global";
 
 // array containing all columns we don't want to present
-const ignoredAttributes = ["assetId", "lastTenVoltgageReadings"];
+const ignoredAttributes = ["id", "assetId", "lastTenVoltgageReadings"];
 
 const HomePage: React.FC = () => {
   // retrieved states and methods associated with the search context
