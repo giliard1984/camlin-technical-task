@@ -3,10 +3,11 @@
 ## Technologies/concepts involved
 
 For the frontend:
-* Vite
+* Vite (https://vitejs.dev/guide/) - Created the project by executing the following command: yarn create vite camlin-technical-task --template react-ts
 * React
 * Typescript
-* Antd
+* Antd (https://ant.design/components/overview)
+* Antd charts (https://ant-design-charts.antgroup.com/en/options/plots/overview - you might need to change to English, but some areas are not translated)
 * Custom Hook to fetch data (useFetch), which is leveraging the generics typescript concept to accept and ensure its types
 * ContextAPI is here to help us abstract and reuse some states across the application where necessary
 * Making use of the Outlet (react-router-dom), so the component can be wrapper in a layout (Basically, a High-Order component, where a function takes a component and returns a new component).
