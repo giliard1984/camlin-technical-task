@@ -21,7 +21,7 @@ If setting up through the docker container, you will need the docker configured 
 * Run `docker-compose run camlin-frontend-service yarn install && docker-compose up -d`
   Note: Bear in mind, that there is a bug related to insalling node_modules within the container images, so it is necessary to run the command above as it is, so the node_modules installs using the right binaries, which are utilised within the container through the defined volume.
 
-* The commandabove  should start the react project (PORT=5178) and the json server (PORT=5179)
+* The command above should start the react project (PORT=5178) and the json server (PORT=5179)
   * Frontend: http://localhost:5178/ , host gets exposed, so it is acessible on your browser
   * JSON Server: http://localhost:5179/
  
@@ -38,7 +38,8 @@ If, you decide to start the project outside the container, please guarantee you 
   * This command should start the react project (PORT=5178) and the json server (PORT=5179)
   * Frontend: http://localhost:5178/
   * JSON Server: http://localhost:5179/
-
+ 
+* You can build it by running the following command `yarn run build`
 
 ![image](https://github.com/user-attachments/assets/a51745fe-903a-4196-b0d9-b30a43724711)
 
@@ -66,3 +67,4 @@ This section aims to express the points that are either missing, or should be im
 * [x] Make use of docker, so starting this project in a different machine should be smoother
 * [ ] Implement skeleton, so when loading the new data, we can see it in a more friendly way
 * [ ] Implement some unit tests
+* [ ] Apply minifier (Terser), so bundled product gets minified (smaller)
