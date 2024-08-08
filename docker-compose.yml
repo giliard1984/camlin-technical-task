@@ -1,0 +1,25 @@
+version: "4.0"
+
+services:
+  camlin-frontend-service:
+    container_name: "camlin-frontend-service"
+    hostname: "camlin-frontend-service"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5178:5178
+      - 5179:5179
+    networks:
+      - camlin-network
+    volumes:
+      - ./:/opt/app
+      - node_modules:/usr/src/app/node_modules
+
+volumes:
+  node_modules:
+
+networks:
+  camlin-network:
+    driver: bridge
