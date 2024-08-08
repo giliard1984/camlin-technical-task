@@ -69,4 +69,4 @@ This section aims to express the points that are either missing, or should be im
 * [ ] Implement skeleton, so when loading the new data, we can see it in a more friendly way
 * [ ] Implement some unit tests
 * [ ] Apply minifier (Terser), so bundled product gets minified (smaller)
-* [ ] Add alias to the project through resolvers
+* [ ] Setup path aliases
