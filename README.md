@@ -60,6 +60,7 @@ The purpose here is to quickly present the concept in a nutshell.
 * Even though I am normalising this information frontend-wise, I would've recommend it to be moved to the backend, to remove some workload. Another, solution woul've been moving the heavy processing to the web workers, so it gets executed on a different thread (outside the main theread), which is multi-thread and the normalised data would've been returned as a callback for the application to mount the components as the web works don't have access to the DOM.
 * Also, worked on the measure as it was in volts, and kV made sense to me to improve readability, alongside ordering by timestamp, as it was descending instead of ascending, which helps us see the progression.
 * I decided to bring the page as a dashboard, so we can see all transformers in one chart (Voltage in kV x Timestamp), but also an statistic chart, where we can see the transformers' Max/Min and Median details, so we know which ones are performing well within the provided period.
+* :vulcan_salute: You can click on the legends to select/unselect a serie, and filter the data.
 
 ## Next steps
 
