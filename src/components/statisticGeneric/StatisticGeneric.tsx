@@ -2,7 +2,7 @@ import React from 'react';
 import type { StatisticProps } from 'antd';
 import { Card, Col, Row, Statistic } from 'antd';
 import CountUp from 'react-countup';
-import type { StatisticType } from "../../definitions/global";
+import type { StatisticType } from "@definitions/global";
 
 interface Props {
   data: StatisticType[]

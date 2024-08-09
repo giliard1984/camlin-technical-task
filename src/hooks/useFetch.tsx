@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { type useFetchState } from "../definitions/global";
+import { type useFetchState } from "@definitions/global";
 
 export default function useFetch <T,>(url: string): useFetchState<T> {
   const [data, setData] = useState<T>();

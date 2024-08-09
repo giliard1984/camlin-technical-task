@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 
 // Layouts
-import DefaultLayout from "../layouts/Default";
+import DefaultLayout from "@layouts/Default";
 
 // Pages
-import HomePage from "../pages/HomePage";
+import HomePage from "@pages/HomePage";
 
 const Router = (): JSX.Element => {
   return (

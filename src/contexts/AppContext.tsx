@@ -1,9 +1,9 @@
 // this context api is responsible for managing the main
 // information related to the application
 import { createContext, useState } from "react";
-import useFetch from "../hooks/useFetch";
+import useFetch from "@hooks/useFetch";
 
-import type { Transformer, NormalisedData, NormalisedMedian, StatisticType } from "../definitions/global";
+import type { Transformer, NormalisedData, NormalisedMedian, StatisticType } from "@definitions/global";
 
 const AppContextValue = {
   transformers: [] as Transformer[] | undefined,

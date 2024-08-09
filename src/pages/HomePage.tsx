@@ -1,11 +1,11 @@
 import React, { useEffect, useContext } from "react";
 import _ from "lodash";
-import StatisticGeneric from "../components/statisticGeneric/StatisticGeneric";
-import TableGeneric from "../components/tableGeneric/TableGeneric";
-import TransformerChart from "../components/transformerChart/TransformerChart";
+import StatisticGeneric from "@components/statisticGeneric/StatisticGeneric";
+import TableGeneric from "@components/tableGeneric/TableGeneric";
+import TransformerChart from "@components/transformerChart/TransformerChart";
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
-import { AppContext } from "../contexts/AppContext";
-import type { Transformer, NormalisedData, NormalisedMedian } from "../definitions/global";
+import { AppContext } from "@contexts/AppContext";
+import type { Transformer, NormalisedData, NormalisedMedian } from "@definitions/global";
 
 // array containing all columns we don't want to present
 const ignoredAttributes = ["id", "assetId", "lastTenVoltgageReadings"];
